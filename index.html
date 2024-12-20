@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Bolívar a Dólar</h1>
+        <form id="conversionForm">
+            <div class="form-group">
+                <label for="amount_vef">Cantidad en Bolívar (VEF):</label>
+                <input type="number" step="0.01" id="amount_vef" name="amount_vef" required>
+            </div>
+            <div class="form-group">
+                <label for="bcv_rate">Tipo de Cambio BCV:</label>
+                <input type="number" step="0.01" id="bcv_rate" name="bcv_rate" required>
+            </div>
+            <div class="form-group">
+                <label for="parallel_rate">Tipo de Cambio Paralelo:</label>
+                <input type="number" step="0.01" id="parallel_rate" name="parallel_rate" required>
+            </div>
+            <div class="form-group">
+                <label for="promedio_rate">Tipo de Cambio Promedio:</label>
+                <input type="number" step="0.01" id="promedio_rate" name="promedio_rate" required>
+            </div>
+            <button type="submit">Convertir</button>
+        </form>
+        <h2 id="resultado">Costo Total: </h2>
+    </div>
+    <script src="script.js"></script>
+    <a href="https://alcambio.app/" target="_blank"> descubre el precio actualizado de BCV y PARALELO</a>
+</body>
+</html>
